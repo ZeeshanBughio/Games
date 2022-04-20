@@ -4,15 +4,37 @@ html {
   background-size: cover;
 }
 
-body {
+.game-board {
   width: 780px;
   margin: 10px auto;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.game-box {
+  position: relative;
+}
+
+.game-box .span-bg {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
 }
 
 /*=====BOARD GAME=================*/

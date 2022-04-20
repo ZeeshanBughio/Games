@@ -79,7 +79,7 @@ $(document).ready(function() {
     ];
     
     var colorOption = 0;
-    var themeOption = 1;
+    var themeOption = 2;
     
     //Change theme
     $('#theme-option').on('click', function() {
@@ -93,6 +93,8 @@ $(document).ready(function() {
         var theme = themes[themeOption];
         
         $('#theme-option').html(theme.name);
+
+		$('.game-box .span-bg').css('background',theme.darkBoxColor);
         
         $('#board').css('border-color', theme.boardBorderColor);
         $('.light-box').css('background', theme.lightBoxColor);
