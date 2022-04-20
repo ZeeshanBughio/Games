@@ -165,7 +165,7 @@ from {
 #player-nav {
   display: inline-block;
   cursor: default;
-  float: left;
+  /* float: left; */
   width: 200px;
   text-align: left;
  margin-top: 5px;
@@ -178,7 +178,7 @@ from {
 
 #undo-btn, #option {
   display: inline-block;
-  float: right;
+  /* float: right; */
   cursor: pointer;
   margin-left: 50px;
  position: relative;
