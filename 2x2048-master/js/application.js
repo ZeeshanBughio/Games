@@ -193,7 +193,7 @@ window.requestAnimationFrame(function () {
     peer.on('open', function (id) {
       window.connectionId = id;
       // Generate a link to share so another player can directly connect
-      document.querySelector(".room-input").value = 'http://127.0.0.1:5500/index.html#' + id;
+      document.querySelector(".room-input").value = 'https://zeeshanbughio.github.io/Games/2x2048-master/index.html#' + id;
     });
 
     peer.on('connection', function (conn) {
